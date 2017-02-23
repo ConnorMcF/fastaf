@@ -53,7 +53,7 @@ end)
 local max = 0
 
 hook.Add( "HUDPaint", "HelloThere", function()
-	local vel = LocalPlayer():GetVelocity()
+	local vel = LocalPlayer():GetVelocity():Length2D()
 	vel.z = 0
 	local speed = vel:Length()
 	local info = ""
